@@ -1,0 +1,97 @@
+@import "sanitize";
+@import "variable";
+@import "mixin";
+
+html {
+  font-size: 62.5%;
+}
+.wrapper{
+  background-color: $background;
+}
+.box {
+  width: $boxSize;
+  height: $boxSize;
+  border-radius: 50%;
+  background-color: $boxBackground;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0.8rem gray;
+  transform: translate(-50%,-50%);
+  user-select: none;
+  cursor: pointer;
+}
+// .box:hover {
+//   z-index: 1;
+// }
+.htmlBox {
+  width: $langBoxSize;
+  height: $langBoxSize;
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  // background-color: $boxBackground;
+  background-color: $htmlcolor;
+  // background: linear-gradient($htmlcolor, #f2672e);
+ }
+.cssBox {
+  width: $langBoxSize;
+  height: $langBoxSize;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  // background-color: $boxBackground;
+  background-color: $csscolor;
+  // background: linear-gradient($csscolor, #30aadd);
+}
+
+.jsBox {
+  width: $langBoxSize;
+  height: $langBoxSize;
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  // background-color: $boxBackground;
+  background-color: $jscolor;
+  // background: linear-gradient($jscolor, #f2bf26);
+
+}
+
+.htmlItem {
+  position: absolute;
+  // opacity: 0.9;
+  background-color: #f2672e;
+}
+
+.cssItem {
+  position: absolute;
+  // opacity: 0.9;
+  background-color: #30aadd;
+}
+
+.jsItem {
+  position: absolute;
+  // opacity: 0.9;
+  background-color: #f2bf26;
+}
+
+.boxText {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-weight: bold;
+  max-width: 4.8rem;
+  text-align: center;
+  margin: 0;
+}
+
+.languageBoxText {
+  font-size: 1.6rem;
+}
+
+.active {
+  top: 10%;
+}
+
+#active {
+  top: 10%;
+}
